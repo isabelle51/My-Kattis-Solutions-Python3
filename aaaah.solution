@@ -1,5 +1,6 @@
 #Solution to "Aaah"
 '''
+#this solution failed all but one test case
 import random
 x=random.randint(0, 1000)
 def aaah(input, doctor_input):
@@ -15,15 +16,10 @@ def aaah(input, doctor_input):
         
 print(aaah("aaah", x))
 ''' 
-
-
-x=input("What does Jon say?")
-y=input("What does the Doctor say?")
-def go_to_doctor(a,b):
-    if len(a)==len(b) or len(a)>=len(b):
-        return "go"
-    if len(a)<len(b):
-        return "no"
-
-print(go_to_doctor(x,y))
-
+#succeeded all 52 test cases
+x=input()#jon input
+y=input()#doctor input
+if len(x)==len(y) or len(x)>len(y):
+    print("go")
+if len(x)<len(y):
+    print("no")
