@@ -1,0 +1,29 @@
+#Solution to "Aaah"
+'''
+import random
+x=random.randint(0, 1000)
+def aaah(input, doctor_input):
+    i=0
+    count=0
+    while i<(len(input)-1):
+        if input[i]=="a":
+            count=count+1
+            i=i+1
+    if count==x:
+        return "go"
+    else: return "no"
+        
+print(aaah("aaah", x))
+''' 
+
+
+x=input("What does Jon say?")
+y=input("What does the Doctor say?")
+def go_to_doctor(a,b):
+    if len(a)==len(b) or len(a)>=len(b):
+        return "go"
+    if len(a)<len(b):
+        return "no"
+
+print(go_to_doctor(x,y))
+
